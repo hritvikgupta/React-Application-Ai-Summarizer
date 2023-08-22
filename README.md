@@ -10,83 +10,44 @@ This web application is designed to provide concise summaries of given articles 
 - Local storage integration to remember and display a history of past article URLs.
 - Convenient copy functionality for past article URLs.
 
+# Preview
+![Application Screenshot](https://github.com/yourusername/ai-article-summarizer/assets/screenshot.jpg)  (Replace with your actual image path)
+
 ## Project Structure
 
-.
-├── assets
-├── dist
-│ ├── index.html
-│ └── vite.svg
-├── node_modules
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── public
-│ └── index.html
-├── src
-│ ├── App.css
-│ ├── App.jsx
-│ ├── assets
-│ ├── components
-│ │ ├── Demo.jsx
-│ │ └── Hero.jsx
-│ ├── main.jsx
-│ ├── services
-│ │ └── article.js
-│ ├── store.js
-│ ├── tailwind.config.js
-│ └── vite.config.js
-└── README.md
+### Frontend
 
-python
-Copy code
+The structure and a brief explanation of each frontend folder/file in the project:
 
-## Demo Component
+- `src`: Root folder containing all source code.
+- `assets`: Contains images and other assets like `linkIcon`, `loader`, `tick`, and `copy`.
+- `components`: All reusable components utilized across the application.
+    * `Demo.jsx`: Main component where users input article URLs and view summaries.
+    * `Hero.jsx`: Possibly a header or banner component (Based on name; adjust as needed).
+- `services`: Includes services like API calls.
+    * `article.js`: Handles interactions with the RapidAPI endpoint.
+- `store.js`: Redux store configuration file.
+- `App.css`: Contains global styles for the application.
+- `App.jsx`: Root React component.
+- `main.jsx`: Entry point for the frontend application.
 
-This is the main component where users can input article URLs to fetch the summary:
 
-'''
-import React, {useState, useEffect} from 'react';
-import {copy, linkIcon, loader, tick} from "../assets";
-import {useLazyGetSummaryQuery} from "../services/article";
-'''
+## Running the Project
 
-// [Complete Demo component code here...]
-Article API Service
-The application makes use of the @reduxjs/toolkit/query to interact with the RapidAPI endpoint for fetching article summaries:
+To run this project locally, follow these steps:
 
-jsx
-Copy code
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+1. Clone the repository to your local machine using the command `git clone https://github.com/hritvikgupta/React-Application-Ai-Summarizer.git`.
+2. Navigate into the project directory using `cd React-Application-Ai-Summarizer`.
+3. Install all the necessary dependencies using the command `npm install`.
+4. Start the application using the command `npm start`. The application will now be running on http://localhost:5173.
 
-const rapidApiKey = import.meta.env.VITE_RAPID_API_ARTICLE_KEY;
+5. ## Contributing
 
-// [Complete Article API service code here...]
-Getting Started
-Clone the repository:
-bash
-Copy code
-git clone [repository_url]
-Navigate to the project directory and install dependencies:
-bash
-Copy code
-cd [project_directory]
-npm install
-Start the development server:
-bash
-Copy code
-npm run dev
-Open your browser and navigate to http://localhost:3000.
-License
-This project is open-source and available under the MIT License.
+Contributions to the project are welcome. If you find a bug, please open an issue and describe the bug in detail. If you wish to add a new feature, feel free to fork the repository and create a pull request with your changes.
+1. Bug In the signUp portal where active tab is not changing.
+2. Adding items to cart but some items id is not rendering and therefore not adding inside cart.
+3. Add the about section
 
-css
-Copy code
+## License
 
-Remember to replace placeholders such as `[repository_url]` and `[project_directory]` with the actual values pertinent to your project.
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is licensed under the MIT License.
