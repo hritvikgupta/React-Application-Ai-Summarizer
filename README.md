@@ -3,15 +3,16 @@
 
 This web application is designed to provide concise summaries of given articles through a user-friendly interface. It is built using React, Vite, Redux Toolkit, and leverages the RapidAPI for fetching article summaries.
 
+# Preview
+Link to the project: https://aisummarizerapplication.netlify.app/
+<img width="1098" alt="Screenshot 2023-08-22 at 10 11 10 AM" src="https://github.com/hritvikgupta/React-Application-Ai-Summarizer/assets/60143996/cd56aff1-e520-401b-a9e4-28980acee19e">
+
 ## Features
 
 - URL input for fetching article summaries.
 - Interactive user interface with loading, error, and summary views.
 - Local storage integration to remember and display a history of past article URLs.
 - Convenient copy functionality for past article URLs.
-
-# Preview
-![Application Screenshot](https://github.com/yourusername/ai-article-summarizer/assets/screenshot.jpg)  (Replace with your actual image path)
 
 ## Project Structure
 
